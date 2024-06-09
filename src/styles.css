@@ -123,3 +123,24 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: bounce 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*Cambiar el color de los iconos cuando se hace el hover*/
+img.socialIcon:hover {
+  filter: invert(1);
+}
